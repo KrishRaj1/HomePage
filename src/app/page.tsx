@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <>
@@ -26,6 +28,8 @@ export default function Home() {
           Contact Us
         </div>
       </div>
+
+      
       <div className="h-screen w-full bg-cover bg-center bg-[url('https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg?auto=compress&cs=tinysrgb&w=800')] relative">
         
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -42,15 +46,19 @@ export default function Home() {
             <div className="text-2xl md:text-4xl mt-4 md:mt-6">A Vision of Your Dreams</div>
             <p className="mt-4 md:mt-6 text-sm md:text-base">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-              leap into electronic typesetting, remaining essentially unchanged.
+              industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type
+              and scrambled it to make a type specimen book. It has survived not only five centuries but also the
+              leap into electronic typesetting remaining essentially unchanged.
             </p>
           </div>
-          <div className="w-full md:w-1/2 flex justify-center opacity-25 items-center p-6 md:p-10 ">
-          <img
+
+          
+          <div className="w-full md:w-1/2 flex justify-center items-center p-6 md:p-10">
+            <Image
               src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Neophyte Consulting Service"
+              width={800} 
+              height={600} 
               className="w-full h-auto max-w-xs md:max-w-md rounded-md shadow-lg"
             />
           </div>
